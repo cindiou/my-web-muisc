@@ -4,9 +4,11 @@ import thunkMiddlewave from "redux-thunk";
 
 const enhanceStore = applyMiddleware(thunkMiddlewave);
 const enhanceCompose =
-  window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
-    trace: true,
-  }) || compose;
+  (window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ &&
+    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
+      trace: true,
+    })) ||
+  compose;
 
 const store = createStore(reducer, enhanceCompose(enhanceStore));
 
