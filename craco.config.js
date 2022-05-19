@@ -28,7 +28,7 @@ module.exports = {
       utils: resolve("src/utils"),
       services: resolve("src/services"),
     },
-    configure: (webpackConfig, { env, paths }) => {
+    /*     configure: (webpackConfig, { env, paths }) => {
       // 修改build的生成文件名称
       paths.appBuild = "build";
       webpackConfig.output = {
@@ -37,6 +37,6 @@ module.exports = {
         publicPath: "/my-web-music/build/",
       };
       return webpackConfig;
-    },
+    }, */
   },
 };
