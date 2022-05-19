@@ -30,11 +30,11 @@ module.exports = {
     },
     configure: (webpackConfig, { env, paths }) => {
       // 修改build的生成文件名称
-      paths.appBuild = "dist";
+      paths.appBuild = "build";
       webpackConfig.output = {
         ...webpackConfig.output,
-        path: path.resolve(__dirname, "dist"),
-        publicPath: "/my-web-music/dist/",
+        path: path.resolve(__dirname, "build"),
+        publicPath: "/my-web-music/build/",
       };
       return webpackConfig;
     },
