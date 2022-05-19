@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const track = require("assets/img/playbar_sprite.png").default;
+const track = require("@/assets/img/playbar_sprite.png").default;
 const handle = require("@/assets/img/sprite_icon.png").default;
 const buffer = require("@/assets/img/progress_bar.png").default;
 

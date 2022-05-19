@@ -101,7 +101,7 @@ button {
 }
 
 .sprite_02 {
-  background: url(../img/sprite_02.png) no-repeat 0 9999px;
+  background: url(@/assets/img/sprite_02.png) no-repeat 0 9999px;
 }
 
 .sprite_cover {
@@ -182,7 +182,7 @@ span:hover.link {
 }
 
 .icon-play {
-  background: url(../img//icn_ply.png) no-repeat 0 9999px;
+  background: url(../img/icn_ply.png) no-repeat 0 9999px;
 }
 
 .global_repaint {
