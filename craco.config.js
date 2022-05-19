@@ -34,7 +34,7 @@ module.exports = {
       webpackConfig.output = {
         ...webpackConfig.output,
         path: path.resolve(__dirname, "dist"),
-        publicPath: "/my-web-muisc/dist/",
+        publicPath: "/my-web-music/dist/",
       };
       return webpackConfig;
     },
