@@ -97,7 +97,7 @@ button {
 }
 
 .sprite_01 {
-  background: url(../img/sprite_01.png) no-repeat 0 9999px;
+  background: url(@/assets/img/sprite_01.png) no-repeat 0 9999px;
 }
 
 .sprite_02 {
@@ -105,39 +105,39 @@ button {
 }
 
 .sprite_cover {
-  background: url(../img/sprite_cover.png) no-repeat 0 9999px;
+  background: url(@/assets/img/sprite_cover.png) no-repeat 0 9999px;
 }
 
 .sprite_icon {
-  background: url(../img/sprite_icon.png) no-repeat 0 9999px;
+  background: url(@/assets/img/sprite_icon.png) no-repeat 0 9999px;
 }
 
 .sprite_icon2 {
-  background: url(../img/sprite_icon2.png) no-repeat 0 9999px;
+  background: url(@/assets/img/sprite_icon2.png) no-repeat 0 9999px;
 }
 
 .sprite_icon3 {
-  background: url(../img/sprite_icon3.png) no-repeat 0 9999px;
+  background: url(@/assets/img/sprite_icon3.png) no-repeat 0 9999px;
 }
 
 .sprite_button {
-  background: url(../img/sprite_button.png) no-repeat 0 9999px;
+  background: url(@/assets/img/sprite_button.png) no-repeat 0 9999px;
 }
 
 .sprite_button2 {
-  background: url(../img/sprite_button2.png) no-repeat 0 9999px;
+  background: url(@/assets/img/sprite_button2.png) no-repeat 0 9999px;
 }
 
 .sprite_table {
-  background: url(../img/sprite_table.png) no-repeat 0 9999px;
+  background: url(@/assets/img/sprite_table.png) no-repeat 0 9999px;
 }
 
 .sprite_playbar {
-  background: url(../img/playbar_sprite.png) no-repeat 0 9999px;
+  background: url(@/assets/img/playbar_sprite.png) no-repeat 0 9999px;
 }
 
 .sprite_playlist {
-  background: url(../img/playlist_sprite.png) no-repeat 0 9999px;
+  background: url(@/assets/img/playlist_sprite.png) no-repeat 0 9999px;
 }
 
 .image_cover {
@@ -147,7 +147,7 @@ button {
   top: 0;
   bottom: 0;
   text-indent: -9999px;
-  background: url(../img/sprite_cover.png) no-repeat -145px -57px;
+  background: url(@/assets/img/sprite_cover.png) no-repeat -145px -57px;
 }
 
 .ant-message .ant-message-notice-content {
@@ -170,51 +170,51 @@ span:hover.link {
 }
 
 .global-logo {
-  background: url(../img/logo.png) no-repeat 0 9999px;
+  background: url(@/assets/img/logo.png) no-repeat 0 9999px;
 }
 
 .playbar {
-  background: url(../img/playbar.png) no-repeat 0 9999px;
+  background: url(@/assets/img/playbar.png) no-repeat 0 9999px;
 }
 
 .global-icon {
-  background: url(../img/icon.png) no-repeat 0 9999px;
+  background: url(@/assets/img/icon.png) no-repeat 0 9999px;
 }
 
 .icon-play {
-  background: url(../img/icn_ply.png) no-repeat 0 9999px;
+  background: url(@/assets/img/icn_ply.png) no-repeat 0 9999px;
 }
 
 .global_repaint {
-  background: url(../img/repaint.png) no-repeat 0 9999px;
+  background: url(@/assets/img/repaint.png) no-repeat 0 9999px;
 }
 
 .global_sprite {
-  background: url(../img/sprite.png) no-repeat 0 9999px;
+  background: url(@/assets/img/sprite.png) no-repeat 0 9999px;
 }
 
 .default_avatar {
-  background: url(../img/default_avatar.jpg) no-repeat 0 9999px;
+  background: url(@/assets/img/default_avatar.jpg) no-repeat 0 9999px;
 }
 
 .cvip_1 {
-  background: url(../img/cvip_1.png) no-repeat 0 0;
+  background: url(@/assets/img/cvip_1.png) no-repeat 0 0;
 }
 .cvip_2 {
-  background: url(../img/cvip_2.png) no-repeat 0 0;
+  background: url(@/assets/img/cvip_2.png) no-repeat 0 0;
 }
 .cvip_3 {
-  background: url(../img/cvip_3.png) no-repeat 0 0;
+  background: url(@/assets/img/cvip_3.png) no-repeat 0 0;
 }
 .cvip_4 {
-  background: url(../img/cvip_4.png) no-repeat 0 0;
+  background: url(@/assets/img/cvip_4.png) no-repeat 0 0;
 }
 .cvip_5 {
-  background: url(../img/cvip_5.png) no-repeat 0 0;
+  background: url(@/assets/img/cvip_5.png) no-repeat 0 0;
 }
 .cvip_6 {
-  background: url(../img/cvip_6.png) no-repeat 0 0;
+  background: url(@/assets/img/cvip_6.png) no-repeat 0 0;
 }
 .little_logo {
-  background: url(../img/comment_rightup.png) no-repeat 0 0;
+  background: url(@/assets/img/comment_rightup.png) no-repeat 0 0;
 }
