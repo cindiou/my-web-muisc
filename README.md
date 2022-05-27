@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+## 项目介绍
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+使用 React 全家桶编写 的云音乐 **PC** Web 项目，接口来源于开源接口[Binaryify/NeteaseCloudMusicApi](https://neteasecloudmusicapi.vercel.app/#/?id=%e5%ae%89%e8%a3%85)，自己在`vercel`已经做了部署[地址](https://vercel.com/cindiou/netease-cloud-music-api)。页面样式仿写参照[网易云音乐](https://music.163.com)官网本身。
 
-## Available Scripts
+此外，由于通过部署在 vercel 的接口的方式主要是通过代理的方式间接访问网易云官方 API，导致整体项目的响应速度偏慢。
 
-In the project directory, you can run:
+[项目预览](https://music.biubiu.fans/)
 
-### `yarn start`
+## 项目完成度
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+项目已经完成功能如下，主要是发现页面中以下几个子页面：
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- 推荐
+  > 轮播图
+  > 底部播放栏
+  > 回到顶部
+- 排行榜
+- 歌单
+- 主播电台
+- 歌手
+- 新碟上架
+- 单首歌曲详情页面
+- 404 页面
+- 等等
 
-### `yarn test`
+### 推荐页面
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![推荐页面](https://i.postimg.cc/W3s3DBSg/image.png)
+![底部播放栏](https://i.postimg.cc/6QQKDC6J/image.png)
 
-### `yarn build`
+1. 目前做了榜单中歌曲的点击播放；
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 做了歌曲的各种控制（暂停、播放、上一首、下一首、进度改变）；
+- 做了播放循序切换：顺序播放、随机播放、单曲循环；
+- 做了歌词的展示；
+- 做了歌曲音量调节
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. 底部播放栏的升降功能：
+   ![底部播放栏:升降演示](https://i.postimg.cc/Njcm7jsr/playbar-updown.gif)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. 歌词的细节展示：
+   ![歌词的细节展示](https://i.postimg.cc/J0KV6nw4/image.png)
 
-### `yarn eject`
+### 排行榜页面：
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![排行榜页面](https://i.postimg.cc/pXxKKdX5/image.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- 各种榜单的切换；
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 歌单页面
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- 选择分类、选择分类后根据分类切换歌单；
+- 根据分类，歌单列表的展示；
+- 分页功能；
 
-## Learn More
+![歌单页面](https://i.postimg.cc/0jZjYPc7/image.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 主播电台页面：
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- 电台分类的展示、滚动；
+- 不同分类展示不同的数据；
+- 电台排行榜展示、分页；
 
-### Code Splitting
+![主播电台](https://i.postimg.cc/g27DyP79/image.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 歌手页面：
 
-### Analyzing the Bundle Size
+- 各种歌手分类
+- 歌手字母分类、对应歌手展示；
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  ![歌手页面](https://i.postimg.cc/2SWqJR6N/image.png)
 
-### Making a Progressive Web App
+### 新碟上架页面：
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- 热门新碟；
+- 全部新碟
+- 分页展示；
 
-### Advanced Configuration
+![新碟上架页面](https://i.postimg.cc/v89ZbLy5/image.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 单首歌曲详情页面
 
-### Deployment
+- 推荐歌曲、收录歌单
+- 歌词展示
+- 评论：精彩评论、最新评论、分页
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  ![进入提示](https://i.postimg.cc/FHGjGXnF/image.png)
+  ![详情显示-part1](https://i.postimg.cc/GtYfsmKm/image.png)
+  ![详情显示-part2](https://i.postimg.cc/cCmQjq4c/image.png)
