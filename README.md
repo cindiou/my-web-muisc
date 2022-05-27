@@ -25,8 +25,8 @@
 
 ### 推荐页面
 
-![推荐页面](https://i.postimg.cc/W3s3DBSg/image.png)
-![底部播放栏](https://i.postimg.cc/6QQKDC6J/image.png)
+![推荐页面][1]
+![底部播放栏][2]
 
 1. 目前做了榜单中歌曲的点击播放；
 
@@ -36,14 +36,14 @@
 - 做了歌曲音量调节
 
 1. 底部播放栏的升降功能：
-   ![底部播放栏:升降演示](https://i.postimg.cc/Njcm7jsr/playbar-updown.gif)
+   ![底部播放栏:升降演示][playbar-updown]
 
 2. 歌词的细节展示：
-   ![歌词的细节展示](https://i.postimg.cc/J0KV6nw4/image.png)
+   ![歌词的细节展示][3]
 
 ### 排行榜页面：
 
-![排行榜页面](https://i.postimg.cc/pXxKKdX5/image.png)
+![排行榜页面][4]
 
 - 各种榜单的切换；
 
@@ -53,7 +53,7 @@
 - 根据分类，歌单列表的展示；
 - 分页功能；
 
-![歌单页面](https://i.postimg.cc/0jZjYPc7/image.png)
+![歌单页面][5]
 
 ### 主播电台页面：
 
@@ -61,14 +61,14 @@
 - 不同分类展示不同的数据；
 - 电台排行榜展示、分页；
 
-![主播电台](https://i.postimg.cc/g27DyP79/image.png)
+![主播电台][6]
 
 ### 歌手页面：
 
 - 各种歌手分类
 - 歌手字母分类、对应歌手展示；
 
-  ![歌手页面](https://i.postimg.cc/2SWqJR6N/image.png)
+  ![歌手页面][7]
 
 ### 新碟上架页面：
 
@@ -76,7 +76,7 @@
 - 全部新碟
 - 分页展示；
 
-![新碟上架页面](https://i.postimg.cc/v89ZbLy5/image.png)
+![新碟上架页面][8]
 
 ### 单首歌曲详情页面
 
@@ -84,6 +84,19 @@
 - 歌词展示
 - 评论：精彩评论、最新评论、分页
 
-  ![进入提示](https://i.postimg.cc/FHGjGXnF/image.png)
-  ![详情显示-part1](https://i.postimg.cc/GtYfsmKm/image.png)
-  ![详情显示-part2](https://i.postimg.cc/cCmQjq4c/image.png)
+  ![进入提示][9]
+  ![详情显示-part1][10]
+  ![详情显示-part2][11]
+
+[playbar-updown]: images/playbar-updown.gif
+[1]: images/1.png
+[2]: images/2.png
+[3]: images/3.png
+[4]: images/4.png
+[5]: images/5.png
+[6]: images/6.png
+[7]: images/7.png
+[8]: images/8.png
+[9]: images/9.png
+[10]: images/10.png
+[11]: images/11.png
