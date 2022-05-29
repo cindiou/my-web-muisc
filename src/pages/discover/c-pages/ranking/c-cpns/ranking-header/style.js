@@ -4,6 +4,7 @@ export const RankingHeaderWrapper = styled.div`
   display: flex;
   align-items: center;
   padding: 40px;
+  min-height: 158px;
 
   .image {
     padding: 3px;
@@ -20,9 +21,13 @@ export const RankingHeaderWrapper = styled.div`
   }
 
   .info {
+    min-height: 119px;
+
     margin-left: 30px;
     .title {
       color: #333;
+      line-height: 24px;
+      height: 24px;
       font-size: 20px;
       font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
     }

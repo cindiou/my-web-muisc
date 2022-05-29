@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const TopAlbumWrapper = styled.div`
   margin-top: 30px;
@@ -6,5 +6,7 @@ export const TopAlbumWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    min-height: 1278px;
   }
-`
+`;

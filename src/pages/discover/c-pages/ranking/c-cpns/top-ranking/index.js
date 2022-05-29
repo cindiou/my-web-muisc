@@ -14,7 +14,7 @@ export default memo(function WMTopRanking() {
       topList: state.getIn(["ranking", "topList"]),
       currentIndex: state.getIn(["ranking", "currentIndex"]),
     }),
-    shallowEqual
+    shallowEqual,
   );
   const dispatch = useDispatch();
 
@@ -26,10 +26,13 @@ export default memo(function WMTopRanking() {
   }, [topList, dispatch, currentIndex]);
 
   // handle function
+  // const handleItemClick = (index) => {
+  //   dispatch(changeCurrentIndex(index));
+  //   const id = topList[currentIndex].id;
+  //   dispatch(getRanking(id));
+  // };
   const handleItemClick = (index) => {
     dispatch(changeCurrentIndex(index));
-    const id = topList[currentIndex].id;
-    dispatch(getRanking(id));
   };
 
   return (

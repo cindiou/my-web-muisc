@@ -72,9 +72,13 @@ export function getTopBannersAction() {
 
 export function getHotRecommendsAction(limit) {
   return (dispatch, getState) => {
+    dispatch({ type: "recommend/is_spinning", isSpinning: true });
+
     getHotRecommends(limit)
       .then((res) => {
         dispatch(changeHotRecommendsAction(res));
+
+        dispatch({ type: "recommend/is_spinning", isSpinning: false });
       })
       .catch(console.error);
   };

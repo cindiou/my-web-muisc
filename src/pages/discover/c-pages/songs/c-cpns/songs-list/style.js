@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const SongListWrapper = styled.div`
   .songs-list {
@@ -6,5 +6,7 @@ export const SongListWrapper = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
     margin-right: -30px;
+
+    min-height: 1580px;
   }
-`
+`;

@@ -10,6 +10,8 @@ const defaultState = Map({
     type: 1,
   },
   artistList: [],
+
+  isSpinning: true,
 });
 
 function reducer(state = defaultState, action) {
@@ -20,6 +22,8 @@ function reducer(state = defaultState, action) {
       return state.set("currentType", action.currentType);
     case actionTypes.CHANGE_ARTIST_LIST:
       return state.set("artistList", action.artistList);
+    case "artist/is_spinning":
+      return state.set("isSpinning", action.isSpinning);
     default:
       return state;
   }

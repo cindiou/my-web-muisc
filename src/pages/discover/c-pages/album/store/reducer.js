@@ -7,6 +7,7 @@ const defaultState = Map({
   topAlbums: [],
   topTotal: 0,
   isSpinningInTopAlbum: true,
+  isSpinning: true,
 });
 
 export default function reducer(state = defaultState, action) {
@@ -17,8 +18,10 @@ export default function reducer(state = defaultState, action) {
       return state.set("topAlbums", action.topAlbums);
     case actionTypes.CHANGE_TOP_TOTAL:
       return state.set("topTotal", action.total);
-    case "album/is_spinning":
+    case "album/is_spinning_in_top_album":
       return state.set("isSpinningInTopAlbum", action.isSpinningInTopAlbum);
+    case "album/is_spinning":
+      return state.set("isSpinning", action.isSpinning);
     default:
       return state;
   }

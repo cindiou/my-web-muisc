@@ -7,7 +7,7 @@ export default memo(function WMSongOperationBar(props) {
 
   return (
     <OperationBarWrapper>
-      <span className="play">
+      <span className="play-container">
         <a href="#/todo" className="play-icon sprite_button">
           <span className="play sprite_button">
             <i className="sprite_button"></i>
@@ -28,7 +28,9 @@ export default memo(function WMSongOperationBar(props) {
       </a>
 
       <a href="#/todo" className="item sprite_button">
-        <i className="icon download-icon sprite_button">{downloadTitle}</i>
+        <i className="icon download-icon sprite_button">
+          {downloadTitle || "下载"}
+        </i>
       </a>
 
       <a href="#/todo" className="item sprite_button">

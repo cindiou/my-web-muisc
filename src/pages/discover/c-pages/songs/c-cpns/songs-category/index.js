@@ -8,13 +8,17 @@ import {
 
 import { CategoryWrapper } from "./style";
 
-export default memo(function WMSongsCategory() {
+export default memo(function WMSongsCategory({
+  forwardedRef,
+  hideSelfHandler,
+  ...props
+}) {
   // redux
   const { category = [] } = useSelector(
     (state) => ({
       category: state.getIn(["songs", "category"]),
     }),
-    shallowEqual
+    shallowEqual,
   );
   const dispatch = useDispatch();
 
@@ -24,11 +28,17 @@ export default memo(function WMSongsCategory() {
   }
 
   return (
-    <CategoryWrapper>
+    <CategoryWrapper ref={forwardedRef}>
       <div className="arrow sprite_icon"></div>
 
       <div className="all">
-        <span className="link" onClick={(e) => selectCategory("全部")}>
+        <span
+          className="link"
+          onClick={(e) => {
+            selectCategory("全部");
+            hideSelfHandler((v) => !v);
+          }}
+        >
           全部风格
         </span>
       </div>
@@ -47,7 +57,10 @@ export default memo(function WMSongsCategory() {
                     <div className="item" key={sItem.name}>
                       <span
                         className="link"
-                        onClick={(e) => selectCategory(sItem.name)}
+                        onClick={(e) => {
+                          selectCategory(sItem.name);
+                          hideSelfHandler((v) => !v);
+                        }}
                       >
                         {sItem.name}
                       </span>

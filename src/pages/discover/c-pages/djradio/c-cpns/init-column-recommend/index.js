@@ -52,8 +52,9 @@ export default memo(function WMInitColumnRecommendInRadio(props) {
 
       <div className="initRecommend-list">
         {infoUnit.slice(0, 9).map((item, index) => {
+          // console.log("item=", item, item.id);
           return (
-            <div className="initRecommend-list-item" key={item.id}>
+            <div className="initRecommend-list-item" key={item.rank}>
               {isRankingList ? (
                 <div className="ranking-number">
                   <p className={classNames({ active: index < 3 })}>
@@ -72,7 +73,7 @@ export default memo(function WMInitColumnRecommendInRadio(props) {
                       isRankingList
                         ? item?.program?.radio?.picUrl
                         : item?.coverUrl,
-                      40
+                      40,
                     )}
                     alt=""
                   ></img>

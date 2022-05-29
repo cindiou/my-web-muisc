@@ -6,8 +6,9 @@ export const RadioPreRecommendWrapper = styled.div`
   margin-top: 30px;
 
   .radio-list {
-    margin-top: 15px;
+    min-height: 300px;
 
+    margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

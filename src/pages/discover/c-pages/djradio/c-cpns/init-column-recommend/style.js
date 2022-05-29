@@ -7,7 +7,9 @@ export const InitColumnRecommendWrapper = styled.div`
     width: 430px;
     padding: 10px 0;
     border: 1px solid #e2e2e2;
-    border-width: 0 1px;
+    border-width: 0 1px 1px 1px;
+
+    min-height: 520px;
 
     .initRecommend-list-item {
       /* width: 390px; */

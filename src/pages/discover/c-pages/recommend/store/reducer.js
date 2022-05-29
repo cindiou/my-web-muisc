@@ -18,6 +18,7 @@ const defaultState = Map({
   originRanking: {},
 
   settleSings: [],
+  isSpinning: true,
 });
 
 function reducer(state = defaultState, action) {
@@ -37,6 +38,8 @@ function reducer(state = defaultState, action) {
       return state.set("originRanking", action.originRanking);
     case CHANGE_SETTLE_SINGER:
       return state.set("settleSings", action.settleSings);
+    case "recommend/is_spinning":
+      return state.set("isSpinning", action.isSpinning);
     default:
       return state;
   }

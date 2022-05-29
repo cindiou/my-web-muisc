@@ -24,21 +24,31 @@ const changeTopTotalAction = (total) => ({
 
 export const getHotAlbumsAction = () => {
   return (dispatch) => {
+    dispatch({ type: "album/is_spinning", isSpinning: true });
+
     getHotAlbums().then((res) => {
       dispatch(changeHotAlbumsAction(res));
+
+      dispatch({ type: "album/is_spinning", isSpinning: false });
     });
   };
 };
 
 export const getTopAlbumsAction = (page) => {
   return (dispatch) => {
-    dispatch({ type: "album/is_spinning", isSpinningInTopAlbum: true });
+    dispatch({
+      type: "album/is_spinning_in_top_album",
+      isSpinningInTopAlbum: true,
+    });
     const offset = PER_PAGE_ALL_ALBUM_COUNT * (page - 1);
     getTopAlbums(offset).then((res) => {
       dispatch(changeTopAlbumAction(res));
       dispatch(changeTopTotalAction(res.total));
 
-      dispatch({ type: "album/is_spinning", isSpinningInTopAlbum: false });
+      dispatch({
+        type: "album/is_spinning_in_top_album",
+        isSpinningInTopAlbum: false,
+      });
     });
   };
 };

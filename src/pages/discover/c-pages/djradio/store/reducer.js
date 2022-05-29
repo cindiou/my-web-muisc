@@ -7,6 +7,8 @@ const defaultState = Map({
   recommends: [],
   radios: [],
   isSpinning: true,
+  isSpinningInRecommendProgram: true,
+  isSpinningInRankingProgram: true,
 
   preMusic: [],
   preLife: [],
@@ -45,8 +47,18 @@ export default (state = defaultState, action) => {
     case actionTypes.CHANGE_RANKING_PROGRAM:
       return state.set("rankingProgram", action.rankingProgram);
 
-    case "radio/is_spinning":
+    case "djradio/is_spinning":
       return state.set("isSpinning", action.isSpinning);
+    case "djradio/is_spinning_in_recommend_program":
+      return state.set(
+        "isSpinningInRecommendProgram",
+        action.isSpinningInRecommendProgram,
+      );
+    case "djradio/is_spinning_in_ranking_program":
+      return state.set(
+        "isSpinningInRankingProgram",
+        action.isSpinningInRankingProgram,
+      );
     default:
       return state;
   }

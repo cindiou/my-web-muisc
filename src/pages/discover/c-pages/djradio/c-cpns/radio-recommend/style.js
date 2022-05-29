@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const RecommendWrapper = styled.div`
   .radio-list {
+    min-height: 200px;
+
     margin: 20px 0 40px;
     display: flex;
     justify-content: ${(props) => {

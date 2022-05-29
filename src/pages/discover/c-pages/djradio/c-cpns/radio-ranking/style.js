@@ -5,5 +5,7 @@ export const RankingWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    min-height: 2576px;
   }
 `;

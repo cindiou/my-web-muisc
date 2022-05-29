@@ -27,7 +27,11 @@ export const getTops = () => {
 
 export const getRanking = (id) => {
   return (dispatch) => {
+    dispatch({ type: "ranking/is_spinning", isSpinning: true });
+
     getRankingList(id).then((res) => {
+      dispatch({ type: "ranking/is_spinning", isSpinning: false });
+
       dispatch(changePlayListAction(res));
     });
   };

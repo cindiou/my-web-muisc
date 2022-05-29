@@ -19,4 +19,8 @@ export const ArtistListWrapper = styled.div`
       padding-bottom: 30px;
     }
   }
+
+  .covers-height {
+    min-height: 367px;
+  }
 `;

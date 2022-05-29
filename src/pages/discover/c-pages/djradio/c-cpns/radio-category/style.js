@@ -40,6 +40,7 @@ export const CategoryContent = styled.div`
     /* justify-content: space-between; */
 
     padding-bottom: 20px;
+    min-height: 200px;
 
     .category-item {
       display: flex;

@@ -3,8 +3,9 @@ import styled from "styled-components";
 export const OperationBarWrapper = styled.div`
   display: flex;
   align-items: center;
+  /* min-height: 31px; */
 
-  .play {
+  .play-container {
     display: flex;
     align-items: center;
     margin-right: 5px;

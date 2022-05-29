@@ -19,10 +19,13 @@ export const changeCurrentTypeAction = (type) => ({
 
 export const getArtistListAction = (area, type, alpha) => {
   return (dispatch) => {
+    dispatch({ type: "artist/is_spinning", isSpinning: true });
     getArtistList(area, type, alpha).then((res) => {
       // console.log(res);
       if (res && res.artists) {
         dispatch(changeArtistListAction(res.artists));
+
+        dispatch({ type: "artist/is_spinning", isSpinning: false });
       }
     });
   };

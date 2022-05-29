@@ -48,11 +48,11 @@ export const getRadioRecommend = (currentId) => {
 
 export const getRadios = (currentId, offset) => {
   return (dispatch) => {
-    dispatch({ type: "radio/is_spinning", isSpinning: true });
+    dispatch({ type: "djradio/is_spinning", isSpinning: true });
 
     getDjRadios(currentId, 30, offset).then((res) => {
       dispatch(changeRadiosAction(res));
-      dispatch({ type: "radio/is_spinning", isSpinning: false });
+      dispatch({ type: "djradio/is_spinning", isSpinning: false });
     });
   };
 };
@@ -110,16 +110,33 @@ const changeRankingProgramAction = (res) => {
 
 export const getRecommendProgramAction = () => {
   return (dispatch, getState) => {
+    dispatch({
+      type: "djradio/is_spinning_in_recommend_program",
+      isSpinningInRecommendProgram: true,
+    });
     getRecommendProgram().then((res) => {
       dispatch(changeRecommendProgramAction(res));
+      dispatch({
+        type: "djradio/is_spinning_in_recommend_program",
+        isSpinningInRecommendProgram: false,
+      });
     });
   };
 };
 
 export const getRankingProgramAction = () => {
   return (dispatch, getState) => {
+    dispatch({
+      type: "djradio/is_spinning_in_ranking_program",
+      isSpinningInRankingProgram: true,
+    });
     getRankingProgram().then((res) => {
       dispatch(changeRankingProgramAction(res));
+
+      dispatch({
+        type: "djradio/is_spinning_in_ranking_program",
+        isSpinningInRankingProgram: false,
+      });
     });
   };
 };

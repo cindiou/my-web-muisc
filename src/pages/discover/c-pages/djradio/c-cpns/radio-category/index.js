@@ -12,7 +12,7 @@ import { CategoryWrapper, CategoryContent, CategoryItemImage } from "./style";
 
 const PAGE_SIZE = 18;
 
-export default memo(function HYRadioCategory() {
+export default memo(function WMRadioCategory() {
   // redux
   const dispatch = useDispatch();
   const { categories, currentId } = useSelector(
@@ -20,11 +20,13 @@ export default memo(function HYRadioCategory() {
       categories: state.getIn(["djradio", "categories"]),
       currentId: state.getIn(["djradio", "currentId"]),
     }),
-    shallowEqual
+    shallowEqual,
   );
 
   // data handle
   const page = Math.ceil(categories.length / PAGE_SIZE) || 1;
+
+  // console.log("categories=", categories);
 
   // hooks
   useEffect(() => {

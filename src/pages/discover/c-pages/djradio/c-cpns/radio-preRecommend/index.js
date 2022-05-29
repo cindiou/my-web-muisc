@@ -14,8 +14,9 @@ export default memo(function WMRadioPreRecommend(props) {
 
       <div className="radio-list">
         {infoUnit.slice(0, 4).map((item, index) => {
+          // console.log("res=", item);
           return (
-            <div className="radio-list-item">
+            <div className="radio-list-item" key={item.id}>
               <div className="img">
                 <img src={getSizeSongsCover(item.picUrl, 120)} alt="" />
               </div>

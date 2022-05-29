@@ -20,7 +20,7 @@ export default memo(function WMSongsList() {
       categorySongs: state.getIn(["songs", "categorySongs"]),
       isSpinning: state.getIn(["songs", "isSpinning"]),
     }),
-    shallowEqual
+    shallowEqual,
   );
   const songList = categorySongs.playlists || [];
   const total = categorySongs.total || 0;
@@ -34,7 +34,7 @@ export default memo(function WMSongsList() {
 
   return (
     <SongListWrapper>
-      <Spin spinning={isSpinning} style={{ marginTop: 20 }}>
+      <Spin spinning={isSpinning} delay={300} style={{ marginTop: 20 }}>
         <div className="songs-list">
           {songList.map((item, index) => {
             return (

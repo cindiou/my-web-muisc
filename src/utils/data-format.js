@@ -10,7 +10,7 @@ export function getSizeSongsCover(url, size) {
     /(\.jpg|\.jpeg|\.png)(.*)$/,
     (match, $1, $2, index, s) => {
       return `${$1}?param=${size}x${size}`;
-    }
+    },
   );
 }
 
@@ -25,17 +25,19 @@ export function getBlurOfBgImage(topBanner, index) {
     /(\.jpg|\.jpeg|\.png)(.*)$/,
     (match, $1, $2, index, s) => {
       return $1 + "?imageView&blur=40x20";
-    }
+    },
   );
 }
 
 export function formatDate(time, fmt) {
+  // if (!time) return "**月**日";
+
   let date = new Date(time);
 
   if (/(y+)/.test(fmt)) {
     fmt = fmt.replace(
       RegExp.$1,
-      (date.getFullYear() + "").substr(4 - RegExp.$1.length)
+      (date.getFullYear() + "").substr(4 - RegExp.$1.length),
     );
   }
   let o = {
@@ -51,7 +53,7 @@ export function formatDate(time, fmt) {
       let str = o[k] + "";
       fmt = fmt.replace(
         RegExp.$1,
-        RegExp.$1.length === 1 ? str : padLeftZero(str)
+        RegExp.$1.length === 1 ? str : padLeftZero(str),
       );
     }
   }
